@@ -43,10 +43,9 @@ Auctioneer: Transactions
         </tr>
     </thead>
     <tbody>
-        {% set i = 0 %}
         {% for buy in bought %}
         <tr>
-            <th scope="row">{{i}}</th>
+            <th scope="row">{{loop.index}}</th>
             <td>{{ buy['item_name'] }}</td>
             <td>{{ buy['category'] }}</td>
             <td>{{ buy['price'] }}</td>
@@ -68,15 +67,14 @@ Auctioneer: Transactions
             <th scope="col">Item Name</th>
             <th scope="col">Category</th>
             <th scope="col">Price</th>
-            <th scope="col">Buyer Id</th>
+            <th scope="col">Bidder Id</th>
             <th scope="col">Date</th>
         </tr>
     </thead>
     <tbody>
-        {% set i = 0 %}
         {% for sell in sold %}
         <tr>
-            <th scope="row">{{i}}</th>
+            <th scope="row">{{loop.index}}</th>
             <td>{{ sell['item_name'] }}</td>
             <td>{{ sell['category'] }}</td>
             <td>{{ sell['price'] }}</td>
