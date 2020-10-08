@@ -50,10 +50,10 @@ Auctioneer: Profile
     <div class="col-md-3">
       <div class="text-center">
         {% if username[0]['gender'] == 'Male' %}
-        <img src="{{ url_for('static', filename='male.png') }}" class="avatar img-circle" height="250" width="250"
+        <img src="{{ url_for('static', filename='male.png') }}" class="avatar img-circle" height="200" width="200"
           alt="avatar">
         {% elif username[0]['gender'] == 'Female' %}
-        <img src="{{ url_for('static', filename='female.png') }}" class="avatar img-circle" height="250" width="250"
+        <img src="{{ url_for('static', filename='female.png') }}" class="avatar img-circle" height="200" width="200"
           alt="avatar">
         {% endif %}
       </div>

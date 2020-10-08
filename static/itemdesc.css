@@ -1,6 +1,6 @@
 body {
-	background-image: url("https://static01.nyt.com/images/2017/05/17/pageoneplus/17-a2-insider/17-a2-insider-superJumbo.jpg") !important;
-	background-size: cover;
+	background-image: url("https://picsum.photos/1920/1080") !important;
+	background-size: contain;
 }
 
 .alert {
